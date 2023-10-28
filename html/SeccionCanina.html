@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://blog.mascotaysalud.com/wp-content/uploads/2019/06/NOMBRES-DE-PERROS-PORTADA.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Estilo para el título de la sección canina */
+        h1 {
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            font-size: 64px;
+            color: rgb(182, 98, 1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.726);
+        }
+
+        /* Estilo para el texto del contenido de la sección canina */
+        p, h2, h3 {
+            color: rgb(182, 98, 1);
+        }
+
+        /* Estilo para los perfiles de perros */
+        .perfil-perro {
+            border: 2px solid gray;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 30%;
+        }
+
+        .perfil-perro img {
+            width: 100%;
+        }
+    </style>
+    <title>Sección Canina - Adopción de Animales</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgb(0, 0, 0);">Sección Canina</h1>
+        <nav>
+            <ul>
+                <li><a href="SeccionFelina.html">Sección Felina</a></li>
+                <li><a href="Adopcion.html">Pagina Principal</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Adopción de Perros</h2>
+            <p class="texto-adicional">Actualmente, en nuestro país se estima que 5 millones de animales viven en la calle, entre ellos se encuentran los perros. Además, 9 de cada 10 animales que nacen en la calle nunca encuentran hogar.En la mayoría de los casos, adoptar significa darle una segunda oportunidad a un animal que ha sufrido un proceso de abandono, y en ocasiones maltrato. Acogerlo en tu casa de por vida y darle la estabilidad, los cuidados y el cariño que necesita va a ayudarlo a que recupere su confianza y su autoestima..</p>
+        </section>
+
+        <!-- Agrega el formulario de filtro y la sección de resultados aquí -->
+        <section>
+            <h2>Filtrar por Edad</h2>
+            <form id="filtro-form">
+                <label for="edad-perro">Selecciona la edad del perro:</label>
+                <select id="edad-perro" name="edad-perro">
+                    <option value="cachorro">Cachorro (2 meses a 2 años)</option>
+                    <option value="adulto">Adulto (3 años a 5 años)</option>
+                    <option value="anciano">Anciano (5 a 12 años)</option>
+                </select>
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section id="resultados-filtro">
+            <!-- Aquí se mostrarán los resultados del filtro -->
+        </section>
+    </main>
+    <div class="perfil-perro" data-nombre="Rocky">
+        <img src="https://www.publico.es/yo-animal/wp-content/uploads/2022/10/perros-callejeros-3-1024x683.jpg" alt="Rocky">
+        <h3>Rocky</h3>
+        <p>Edad: 2 años</p>
+        <p>Descripción: Rocky es un perro en busca de un hogar que este lleno de energía y amor.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Luna">
+        <img src="https://caracoltv.brightspotcdn.com/dims4/default/afe6de4/2147483647/strip/true/crop/1907x1201+0+0/resize/1000x630!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F55%2F25%2F962f3fd9493ca48acb2ceaaf6724%2Fperro-callejero.jpg" alt="Luna">
+        <h3>Luna</h3>
+        <p>Edad: 2 años</p>
+        <p>Descripción: Luna es una perrita cariñosa y juguetona. Está lista para ser parte de tu familia.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Max">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3WWUTA67FRAMXAKAKG4Y4Z3H7Q.jpg" alt="Max">
+        <h3>Max</h3>
+        <p>Edad: 2 años</p>
+        <p>Descripción: Max es un perro activo y juguetón. Le encanta salir a pasear y disfrutar de la vida al aire libre.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Bella">
+        <img src="https://images.unsplash.com/photo-1666988872974-ecfb1e22cc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80" alt="Bella">
+        <h3>Bella</h3>
+        <p>Edad: 3 años</p>
+        <p>Descripción: Bella es una perrita cariñosa y leal. Busca un hogar donde pueda ser parte de una familia cariñosa.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Toby">
+        <img src="https://www.cronista.com/files/image/653/653668/64c26f9e0572a_700_499!.jpg?s=2714f5d4a5cab259fb837e60e89b866e&d=1690464161" alt="Toby">
+        <h3>Toby</h3>
+        <p>Edad: 3 años</p>
+        <p>Descripción: Toby es un guerrero,vivio toda su vida en la calle y esta en busca de un dulce hogar.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Daisy">
+        <img src="https://tropicozacatecas.com/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-14-at-9.02.18-AM-2.jpeg" alt="Daisy">
+        <h3>Daisy</h3>
+        <p>Edad: 5 años</p>
+        <p>Descripción: Daisy es una perrita tranquila y amorosa. Le encanta correr y pasear, tiene mucha energia!.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Charlie">
+        <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/04/21160654/Perro-adulto-viejo-1920-2.jpg" alt="Charlie">
+        <h3>Charlie</h3>
+        <p>Edad: 7 años</p>
+        <p>Descripción: Charlie es un perro mayor que busca un hogar tranquilo donde pueda disfrutar de su vejez con amor y cuidado.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Coco">
+        <img src="https://www.infobae.com/new-resizer/FIlLO4KGJAj5QJGSUlBQ9-M6SRg=/arc-anglerfish-arc2-prod-infobae/public/326PZKGICNDZJOZWL3BB6ORHJE.png" alt="Coco">
+        <h3>Coco</h3>
+        <p>Edad: 8 años</p>
+        <p>Descripción: Coco es un perro mayor que disfruta de la tranquilidad del hogar. Está en busca de un retiro cómodo y amoroso.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Duke">
+        <img src="https://img.freepik.com/fotos-premium/perros-callejeros-estan-llenos-garrapatas-oreja_44272-1164.jpg" alt="Duke">
+        <h3>Duke</h3>
+        <p>Edad: 9 años</p>
+        <p>Descripción: Duke es un perro mayor que ha vivido muchas aventuras. Ahora busca un hogar donde pasar sus días de jubilación.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Bella">
+        <img src="https://elcomercio.pe/resizer/G2fTUvp_BPUeQKDJt471URwCWR8=/1200x900/smart/filters:format(jpeg):quality(75)/dvgnzpfv30f28.cloudfront.net/03-13-2020/t_655657a2691b44cd856145f07722ff44_name_anciano_MAG_2.png" alt="Bella">        <h3>Bella</h3>
+        <p>Edad: 10 años</p>
+        <p>Descripción: Bella es una perrita mayor que solo quiere amor y cuidado en su vejez. Es un tesoro en busca de un hogar.</p>
+    </div>
+
+    <div class="perfil-perro" data-nombre="Tobi">
+        <img src="https://img.freepik.com/fotos-premium/cachorros-callejeros-marrones-sentados-suelo_36268-795.jpg" alt="Tobi">
+        <h3>Tobi</h3>
+        <p>Edad: 4 meses</p>
+        <p>Descripción: Tobi es un adorable cachorro lleno de energía y curiosidad. Está buscando un hogar lleno de diversión y cariño.</p>
+    </div>
+    
+    <div class="perfil-perro" data-nombre="Chispita">
+        <img src="https://nuevodiarioweb1.cdn.net.ar/252/nuevodiarioweb/images/01/48/90/1489068_b469506629c78bc7480a89c146365491e50f0810cc8227bfcd21d2ec333c48de/lg.jpg" alt="Chispita">
+        <h3>Chispita</h3>
+        <p>Edad: 5 meses</p>
+        <p>Descripción: Chispita es un perrito lleno de alegría y vitalidad. Le encanta jugar y es perfecto para familias activas.</p>
+    </div>
+
+    <script>
+        // Script JavaScript para el filtro
+        document.addEventListener("DOMContentLoaded", function () {
+            const filtroForm = document.getElementById("filtro-form");
+            const resultadosFiltro = document.getElementById("resultados-filtro");
+
+            const perros = [
+    { nombre: "Rocky", edad: "2 años" },
+    { nombre: "Luna", edad: "2 años" },
+    { nombre: "Max", edad: "2 años" },
+    { nombre: "Bella", edad: "3 años" },
+    { nombre: "Toby", edad: "0.33" }, 
+    { nombre: "Chispita", edad: "0.42" },  
+    { nombre: "Daisy", edad: "5 años" },
+    { nombre: "Charlie", edad: "7 años" },
+    { nombre: "Coco", edad: "8 años" },
+    { nombre: "Duke", edad: "9 años" },
+    { nombre: "Bella", edad: "3 años" }
+];            
+filtroForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const edadSeleccionada = document.getElementById("edad-perro").value;
+    let edadMinima, edadMaxima;
+
+    // Define los rangos de edad según la selección
+    if (edadSeleccionada === "cachorro") {
+        edadMinima = 2 / 12; // 2 meses en años (cambio aquí)
+        edadMaxima = 2;
+    } else if (edadSeleccionada === "adulto") {
+        edadMinima = 3;
+        edadMaxima = 5;
+    } else if (edadSeleccionada === "anciano") {
+        edadMinima = 5;
+        edadMaxima = 12;
+    }
+
+    // Filtra los perros según los nuevos rangos de edad
+    const perrosFiltrados = perros.filter(perro => {
+        const edadPerro = parseFloat(perro.edad);
+        if (edadSeleccionada === "cachorro") {
+            // Si se selecciona "Cachorro", convierte la edad del perro de meses a años
+            return edadPerro >= edadMinima && edadPerro <= edadMaxima;
+        } else {
+            // Para las otras categorías, simplemente compara las edades en años
+            return edadPerro >= edadMinima && edadPerro <= edadMaxima;
+        }
+    });
+
+    // Oculta todos los perfiles de perros
+    const perfilesPerros = document.querySelectorAll(".perfil-perro");
+    perfilesPerros.forEach(perfil => perfil.style.display = "none");
+
+    // Muestra solo los perfiles de perros filtrados
+    if (perrosFiltrados.length > 0) {
+        perrosFiltrados.forEach(perro => {
+            const resultadoPerro = document.querySelector(`.perfil-perro[data-nombre="${perro.nombre}"]`);
+            resultadoPerro.style.display = "block";
+        });
+    } else {
+        const mensajeResultado = document.createElement("p");
+        mensajeResultado.textContent = "No se encontraron perros para esta edad.";
+        resultadosFiltro.appendChild(mensajeResultado);
+    }
+});
+        });
+    </script>
+</body>
+</html>

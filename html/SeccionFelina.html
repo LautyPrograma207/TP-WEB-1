@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            background-image: url('https://www.infobae.com/new-resizer/-x8ragWmtP_cYA5OM_XhVbIWyEE=/arc-anglerfish-arc2-prod-infobae/public/K7GLWG63KNH2XCIC4QATCNHULM.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Estilo para el título de la sección felina */
+        h1 {
+            font-size: 36px; /* Tamaño de fuente más grande */
+            color: gray; /* Color de texto gris */
+            background: none; /* Elimina el fondo */
+        }
+
+        /* Estilo para el texto del contenido de la sección felina */
+        p, h2, h3 {
+            color: white; /* Color de texto blanco */
+        }
+
+        /* Estilo para los perfiles de gatos */
+        .perfil-gato {
+            border: 2px solid gray; /* Recuadro gris alrededor de cada perfil */
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 30%; /* Ajusta el ancho de cada perfil */
+        }
+
+        .perfil-gato img {
+            width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+        }
+    </style>
+    <title>Sección Felina - Adopción de Animales</title>
+</head>
+<body>
+    <header>
+        <h1>Sección Felina</h1>
+        <nav>
+            <ul>
+                <li><a href="SeccionCanina.html">Sección Canina</a></li>
+                <li><a href="Adopcion.html">Pagina Principal</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Adopción de Gatos</h2>
+            <p class="texto-adicional">Actualmente, en nuestro país se estima que miles de gatos callejeros necesitan un hogar. La adopción de un gato puede cambiar su vida y la tuya. Aquí encontrarás algunos gatos en busca de un hogar amoroso.</p>
+        </section>
+
+        <!-- Agrega el formulario de filtro y la sección de resultados aquí -->
+        <section>
+            <h2>Filtrar por Edad</h2>
+            <form id="filtro-form">
+                <label for="edad-gato">Selecciona la edad del gato:</label>
+                <select id="edad-gato" name="edad-gato">
+                    <option value="cachorro">Cachorro (2 meses a 2 años)</option>
+                    <option value="adulto">Adulto (3 años a 5 años)</option>
+                    <option value="anciano">Anciano (5 a 12 años)</option>
+                </select>
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section id="resultados-filtro">
+            <!-- Aquí se mostrarán los resultados del filtro -->
+        </section>
+    </main>
+    <div class="perfil-gato" data-nombre="Gato1">
+        <img src="https://elcronista.co/assets/media/gato-enfermo-callejero2.jpg" alt="Gato1">
+        <h3>Gato1</h3>
+        <p>Edad: 2 años</p>
+        <p>Descripción: Gato1 es un gato en busca de un hogar amoroso.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato2">
+        <img src="https://s1.ppllstatics.com/eldiariomontanes/www/multimedia/202210/22/media/cortadas/el-gato-khiG--1248x770@Diario%20Montanes.jpg" alt="Gato2">
+        <h3>Gato2</h3>
+        <p>Edad: 3 años</p>
+        <p>Descripción: Gato2 es un gato juguetón y cariñoso en busca de un hogar.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArqODT6kyuramk-q32R9ytxHkZU_cMGdcaQ&usqp=CAU" alt="Gato3">
+        <h3>Gato3</h3>
+        <p>Edad: 5 años</p>
+        <p>Descripción: Gato3 es un gato tranquilo que disfruta de la compañía.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato4">
+        <img src="https://www.abc.es/xlsemanal/wp-content/uploads/sites/5/2023/02/gato-callejero-animal-salvaje-mascota-domestico-esterilizacion-a.jpg" alt="Gato4">
+        <h3>Gato4</h3>
+        <p>Edad: 3 años</p>
+        <p>Descripción: Gato4 es un gato amigable y juguetón.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX7uCDJlNgGSzov6glgPqTS8Mv9Fkifm-dWg&usqp=CAU" alt="Gato5">
+        <h3>Gato5</h3>
+        <p>Edad: 7 años</p>
+        <p>Descripción: Gato5 es un gato mayor en busca de un hogar cómodo.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYLy3unOUHeBy4kmq5P4Qsg372I49vphaIQ&usqp=CAU" alt="Gato6">
+        <h3>Gato6</h3>
+        <p>Edad: 8 años</p>
+        <p>Descripción: Gato6 es un gato mayor que busca un lugar tranquilo.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1xF5DSiPuD7qVAl5C2A9JWNSAtwsBrrTMvp4C55P9tnF13yu21crhiF2TyL0DrbFcJG8&usqp=CAU" alt="Gato7">
+        <h3>Gato7</h3>
+        <p>Edad: 9 años</p>
+        <p>Descripción: Gato7 es un gato mayor en busca de un hogar amoroso.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIL95yBMF1tqBp3FNZQZUwE0th1iiC_GbXw&usqp=CAU" alt="Gato8">
+        <h3>Gato8</h3>
+        <p>Edad: 10 años</p>
+        <p>Descripción: Gato8 es un gato mayor en busca de un hogar cariñoso.</p>
+    </div>
+
+    <div class="perfil-gato" data-nombre="Gato9">
+        <img src="https://imagenes.elpais.com/resizer/FpPBNWFMGuLBe7ALM9Ek-DsSbJw=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7UOVE5DQ5FGTXONOCXZ35I2IZA.jpg" alt="Gato9">
+        <h3>Gato9</h3>
+        <p>Edad: 2 años</p>
+        <p>Descripción: Gato9 es un gato en busca de un hogar amoroso.</p>
+    </div>
+</body>
+</html>
