@@ -1,3 +1,4 @@
+/* Estilos para el fondo y títulos */
 body {
   background-image: url("https://www.infobae.com/new-resizer/-x8ragWmtP_cYA5OM_XhVbIWyEE=/arc-anglerfish-arc2-prod-infobae/public/K7GLWG63KNH2XCIC4QATCNHULM.jpg");
   background-size: cover;
@@ -7,16 +8,22 @@ body {
 
 h1 {
   font-size: 36px;
-  color: gray;
+  color: #FFC0CB; /* Rosa medio claro */
   background: none;
 }
 
+/* Estilos para el texto y números de teléfono */
 p,
 h2,
 h3 {
-  color: white;
+  color: gold; /* Color dorado para el texto */
 }
 
+.telefono-dueño { /* Aplicar estilo solo al número de teléfono */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los perfiles de gatos */
 .perfil-gato {
   border: 2px solid gray;
   padding: 10px;

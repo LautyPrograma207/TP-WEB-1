@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="./styles/SeccionFelina.css" >
-    <link type="text/css" rel="stylesheet" href="./styles/Global.css" >
+    <link type="text/css" rel="stylesheet" href="./styles/SeccionFelina.css">
+    <link type="text/css" rel="stylesheet" href="./styles/Global.css">
     <title>Sección Felina - Adopción de Animales</title>
 </head>
 <body>
@@ -25,12 +25,12 @@
             <p class="texto-adicional">Actualmente, en nuestro país se estima que miles de gatos callejeros necesitan un hogar. La adopción de un gato puede cambiar su vida y la tuya. Aquí encontrarás algunos gatos en busca de un hogar amoroso.</p>
         </section>
 
-        <!-- Agrega el formulario de filtro y la sección de resultados aquí -->
         <section>
             <h2>Filtrar por Edad</h2>
             <form id="filtro-form">
                 <label for="edad-gato">Selecciona la edad del gato:</label>
                 <select id="edad-gato" name="edad-gato">
+                    <option value="todos">Todos</option>
                     <option value="cachorro">Cachorro (2 meses a 2 años)</option>
                     <option value="adulto">Adulto (3 años a 5 años)</option>
                     <option value="anciano">Anciano (5 a 12 años)</option>
@@ -39,91 +39,145 @@
             </form>
         </section>
         <section id="resultados-filtro">
-            <!-- Aquí se mostrarán los resultados del filtro -->
         </section>
     </main>
-    <div class="perfil-gato" data-nombre="Gato1">
-        <img src="https://elcronista.co/assets/media/gato-enfermo-callejero2.jpg" alt="Gato1">
-        <h3>Gato1</h3>
+
+    <div class="perfil-gato" data-nombre="Whiskers" data-edad="2">
+        <img src="https://elcronista.co/assets/media/gato-enfermo-callejero2.jpg" alt="Whiskers">
+        <h3>Whiskers</h3>
         <p>Edad: 2 años</p>
-        <p>Descripción: Gato1 es un gato en busca de un hogar amoroso.</p>
+        <p>Descripción: Whiskers es un gato en busca de un hogar amoroso.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-638174</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato2">
-        <img src="https://s1.ppllstatics.com/eldiariomontanes/www/multimedia/202210/22/media/cortadas/el-gato-khiG--1248x770@Diario%20Montanes.jpg" alt="Gato2">
-        <h3>Gato2</h3>
+    <div class="perfil-gato" data-nombre="Smokey" data-edad="3">
+        <img src="https://s1.ppllstatics.com/eldiariomontanes/www/multimedia/202210/22/media/cortadas/el-gato-khiG--1248x770@Diario%20Montanes.jpg" alt="Smokey">
+        <h3>Smokey</h3>
         <p>Edad: 3 años</p>
-        <p>Descripción: Gato2 es un gato juguetón y cariñoso en busca de un hogar.</p>
+        <p>Descripción: Smokey es un gato juguetón y cariñoso en busca de un hogar.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-538252</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArqODT6kyuramk-q32R9ytxHkZU_cMGdcaQ&usqp=CAU" alt="Gato3">
-        <h3>Gato3</h3>
+    <div class="perfil-gato" data-nombre="Luna" data-edad="5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArqODT6kyuramk-q32R9ytxHkZU_cMGdcaQ&usqp=CAU" alt="Luna">
+        <h3>Luna</h3>
         <p>Edad: 5 años</p>
-        <p>Descripción: Gato3 es un gato tranquilo que disfruta de la compañía.</p>
+        <p>Descripción: Luna es un gato tranquilo que disfruta de la compañía.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-632842</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato4">
-        <img src="https://www.abc.es/xlsemanal/wp-content/uploads/sites/5/2023/02/gato-callejero-animal-salvaje-mascota-domestico-esterilizacion-a.jpg" alt="Gato4">
-        <h3>Gato4</h3>
+    <div class="perfil-gato" data-nombre="Oliver" data-edad="3">
+        <img src="https://www.abc.es/xlsemanal/wp-content/uploads/sites/5/2023/02/gato-callejero-animal-salvaje-mascota-domestico-esterilizacion-a.jpg" alt="Oliver">
+        <h3>Oliver</h3>
         <p>Edad: 3 años</p>
-        <p>Descripción: Gato4 es un gato amigable y juguetón.</p>
+        <p>Descripción: Oliver es un gato amigable y juguetón.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-547853</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato5">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX7uCDJlNgGSzov6glgPqTS8Mv9Fkifm-dWg&usqp=CAU" alt="Gato5">
-        <h3>Gato5</h3>
+    <div class="perfil-gato" data-nombre="Misty" data-edad="7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX7uCDJlNgGSzov6glgPqTS8Mv9Fkifm-dWg&usqp=CAU" alt="Misty">
+        <h3>Misty</h3>
         <p>Edad: 7 años</p>
-        <p>Descripción: Gato5 es un gato mayor en busca de un hogar cómodo.</p>
+        <p>Descripción: Misty es un gato mayor en busca de un hogar cómodo.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-593910</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato6">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYLy3unOUHeBy4kmq5P4Qsg372I49vphaIQ&usqp=CAU" alt="Gato6">
-        <h3>Gato6</h3>
+    <div class="perfil-gato" data-nombre="Whiskers" data-edad="8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYLy3unOUHeBy4kmq5P4Qsg372I49vphaIQ&usqp=CAU" alt="Whiskers">
+        <h3>Whiskers</h3>
         <p>Edad: 8 años</p>
-        <p>Descripción: Gato6 es un gato mayor que busca un lugar tranquilo.</p>
+        <p>Descripción: Whiskers es un gato mayor que busca un lugar tranquilo.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-137929</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato7">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1xF5DSiPuD7qVAl5C2A9JWNSAtwsBrrTMvp4C55P9tnF13yu21crhiF2TyL0DrbFcJG8&usqp=CAU" alt="Gato7">
-        <h3>Gato7</h3>
+    <div class="perfil-gato" data-nombre="Simba" data-edad="9">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1xF5DSiPuD7qVAl5C2A9JWNSAtwsBrrTMvp4C55P9tnF13yu21crhiF2TyL0DrbFcJG8&usqp=CAU" alt="Simba">
+        <h3>Simba</h3>
         <p>Edad: 9 años</p>
-        <p>Descripción: Gato7 es un gato mayor en busca de un hogar amoroso.</p>
+        <p>Descripción: Simba es un gato mayor en busca de un hogar amoroso.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-691299</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato8">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIL95yBMF1tqBp3FNZQZUwE0th1iiC_GbXw&usqp=CAU" alt="Gato8">
-        <h3>Gato8</h3>
+    <div class="perfil-gato" data-nombre="Bella" data-edad="10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIL95yBMF1tqBp3FNZQZUwE0th1iiC_GbXw&usqp=CAU" alt="Bella">
+        <h3>Bella</h3>
         <p>Edad: 10 años</p>
-        <p>Descripción: Gato8 es un gato mayor en busca de un hogar cariñoso.</p>
+        <p>Descripción: Bella es un gato mayor en busca de un hogar cariñoso.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-435929</p>
+
     </div>
 
-    <div class="perfil-gato" data-nombre="Gato9">
-        <img src="https://imagenes.elpais.com/resizer/FpPBNWFMGuLBe7ALM9Ek-DsSbJw=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7UOVE5DQ5FGTXONOCXZ35I2IZA.jpg" alt="Gato9">
-        <h3>Gato9</h3>
+    <div class="perfil-gato" data-nombre="Milo" data-edad="2">
+        <img src="https://imagenes.elpais.com/resizer/FpPBNWFMGuLBe7ALM9Ek-DsSbJw=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7UOVE5DQ5FGTXONOCXZ35I2IZA.jpg" alt="Milo">
+        <h3>Milo</h3>
         <p>Edad: 2 años</p>
-        <p>Descripción: Gato9 es un gato en busca de un hogar amoroso.</p>
+        <p>Descripción: Milo es un gato en busca de un hogar amoroso.</p>
+        <p class="telefono-dueño">Teléfono del dueño: 2664-592859</p>
+
     </div>
 
     <script>
-        const filtroForm = document.getElementById("filtro-form");
-        const resultadosFiltro = document.getElementById("resultados-filtro");
+        document.addEventListener("DOMContentLoaded", function () {
+            const filtroForm = document.getElementById("filtro-form");
+            const resultadosFiltro = document.getElementById("resultados-filtro");
 
-        filtroForm.addEventListener("submit", function (e) {
-            e.preventDefault();
+            const gatos = [
+                { nombre: "Whiskers", edad: "2" },
+                { nombre: "Smokey", edad: "3" },
+                { nombre: "Luna", edad: "5" },
+                { nombre: "Oliver", edad: "3" },
+                { nombre: "Misty", edad: "7" },
+                { nombre: "Whiskers", edad: "2" },
+                { nombre: "Simba", edad: "9" },
+                { nombre: "Bella", edad: "10" },
+                { nombre: "Milo", edad: "2" }
+            ];
 
-            const edadSeleccionada = filtroForm.elements["edad-gato"].value;
+            filtroForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-            const perfilesGatos = document.querySelectorAll(".perfil-gato");
-            resultadosFiltro.innerHTML = "";
+    const edadSeleccionada = document.getElementById("edad-gato").value;
+    let edadMinima, edadMaxima;
 
-            perfilesGatos.forEach((perfilGato) => {
-                const edadGato = parseInt(perfilGato.getAttribute("data-edad"));
+    if (edadSeleccionada === "cachorro") {
+        edadMinima = 2 / 12; 
+        edadMaxima = 2;
+    } else if (edadSeleccionada === "adulto") {
+        edadMinima = 3;
+        edadMaxima = 5;
+    } else if (edadSeleccionada === "anciano") {
+        edadMinima = 5;
+        edadMaxima = 12;
+    }
 
-                if (edadSeleccionada === "todos" || edadSeleccionada === "cachorro" && edadGato <= 2 || edadSeleccionada === "adulto" && edadGato >= 3 && edadGato <= 5 || edadSeleccionada === "anciano" && edadGato >= 5) {
-                    resultadosFiltro.appendChild(perfilGato.cloneNode(true));
-                }
-            });
+    const gatosFiltrados = gatos.filter(gato => {
+        const edadGato = parseFloat(gato.edad);
+        return edadGato >= edadMinima && edadGato <= edadMaxima;
+    });
+
+    const perfilesGatos = document.querySelectorAll(".perfil-gato");
+    perfilesGatos.forEach(perfil => perfil.style.display = "none");
+
+    if (gatosFiltrados.length > 0) {
+        gatosFiltrados.forEach(gato => {
+            const resultadoGato = document.querySelector(`.perfil-gato[data-nombre="${gato.nombre}"]`);
+            resultadoGato.style.display = "block";
+        });
+    } else {
+        const mensajeResultado = document.createElement("p");
+        mensajeResultado.textContent = "No se encontraron gatos para esta edad.";
+        resultadosFiltro.appendChild(mensajeResultado);
+    }
+});
+const todosOption = document.querySelector('option[value="todos"]');
+todosOption.style.display = "none";
         });
     </script>
 </body>
