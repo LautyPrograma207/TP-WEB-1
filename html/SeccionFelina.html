@@ -30,7 +30,6 @@
             <form id="filtro-form">
                 <label for="edad-gato">Selecciona la edad del gato:</label>
                 <select id="edad-gato" name="edad-gato">
-                    <option value="todos">Todos</option>
                     <option value="cachorro">Cachorro (2 meses a 2 años)</option>
                     <option value="adulto">Adulto (3 años a 5 años)</option>
                     <option value="anciano">Anciano (5 a 12 años)</option>
@@ -176,8 +175,7 @@
         resultadosFiltro.appendChild(mensajeResultado);
     }
 });
-const todosOption = document.querySelector('option[value="todos"]');
-todosOption.style.display = "none";
+
         });
     </script>
 </body>
