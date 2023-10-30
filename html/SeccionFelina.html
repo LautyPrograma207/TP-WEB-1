@@ -3,40 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <style>
-        body {
-            background-image: url('https://www.infobae.com/new-resizer/-x8ragWmtP_cYA5OM_XhVbIWyEE=/arc-anglerfish-arc2-prod-infobae/public/K7GLWG63KNH2XCIC4QATCNHULM.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        /* Estilo para el título de la sección felina */
-        h1 {
-            font-size: 36px; /* Tamaño de fuente más grande */
-            color: gray; /* Color de texto gris */
-            background: none; /* Elimina el fondo */
-        }
-
-        /* Estilo para el texto del contenido de la sección felina */
-        p, h2, h3 {
-            color: white; /* Color de texto blanco */
-        }
-
-        /* Estilo para los perfiles de gatos */
-        .perfil-gato {
-            border: 2px solid gray; /* Recuadro gris alrededor de cada perfil */
-            padding: 10px;
-            margin: 10px;
-            display: inline-block;
-            width: 30%; /* Ajusta el ancho de cada perfil */
-        }
-
-        .perfil-gato img {
-            width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="./styles/SeccionFelina.css" >
+    <link type="text/css" rel="stylesheet" href="./styles/Global.css" >
     <title>Sección Felina - Adopción de Animales</title>
 </head>
 <body>
@@ -45,8 +13,9 @@
         <nav>
             <ul>
                 <li><a href="SeccionCanina.html">Sección Canina</a></li>
+                <li><a href="SeccionFelina.html">Sección Felina</a></li>
                 <li><a href="Adopcion.html">Pagina Principal</a></li>
-
+                <li><a href="Contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -135,5 +104,27 @@
         <p>Edad: 2 años</p>
         <p>Descripción: Gato9 es un gato en busca de un hogar amoroso.</p>
     </div>
+
+    <script>
+        const filtroForm = document.getElementById("filtro-form");
+        const resultadosFiltro = document.getElementById("resultados-filtro");
+
+        filtroForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const edadSeleccionada = filtroForm.elements["edad-gato"].value;
+
+            const perfilesGatos = document.querySelectorAll(".perfil-gato");
+            resultadosFiltro.innerHTML = "";
+
+            perfilesGatos.forEach((perfilGato) => {
+                const edadGato = parseInt(perfilGato.getAttribute("data-edad"));
+
+                if (edadSeleccionada === "todos" || edadSeleccionada === "cachorro" && edadGato <= 2 || edadSeleccionada === "adulto" && edadGato >= 3 && edadGato <= 5 || edadSeleccionada === "anciano" && edadGato >= 5) {
+                    resultadosFiltro.appendChild(perfilGato.cloneNode(true));
+                }
+            });
+        });
+    </script>
 </body>
 </html>

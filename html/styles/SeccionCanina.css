@@ -1,0 +1,31 @@
+body {
+  background-image: url("https://blog.mascotaysalud.com/wp-content/uploads/2019/06/NOMBRES-DE-PERROS-PORTADA.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Alumni Sans Collegiate One", sans-serif;
+  font-size: 64px;
+  color: rgb(182, 98, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.726);
+}
+
+p,
+h2,
+h3 {
+  color: rgb(182, 98, 1);
+}
+
+.perfil-perro {
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+}
+
+.perfil-perro img {
+  width: 100%;
+}

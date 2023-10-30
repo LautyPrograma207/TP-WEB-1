@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="./styles/Contact.css">
+  <link type="text/css" rel="stylesheet" href="./styles/Global.css">
+  <title>Contacto</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="SeccionCanina.html">Sección Canina</a></li>
+      <li><a href="SeccionFelina.html">Sección Felina</a></li>
+      <li><a href="Adopcion.html">Pagina Principal</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="carousel-container">
+      <button id="prev-button" onclick="prevImage()"><</button>
+      <div id="carousel"></div>
+      <button id="next-button" onclick="nextImage()">></button>
+    </div>
+    <form>
+      <h1>Contacto</h1>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <div id="error-container"></div>
+
+      <input id="button" type="button" value="Enviar" onclick="validarFormulario()">
+    </form>
+
+  </main>
+  <script>
+    function validarFormulario() {
+      const nombre = document.getElementById("nombre").value;
+      const email = document.getElementById("email").value;
+      const mensaje = document.getElementById("mensaje").value;
+      const emailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+      const errorContainer = document.getElementById("error-container");
+      errorContainer.innerHTML = "";
+
+      let valid = true;
+
+      if (nombre.trim() === "") {
+        mostrarError("Por favor, ingresa tu nombre.", "nombre");
+        valid = false;
+      }
+
+      if (!email.match(emailRegExp)) {
+        mostrarError("Por favor, ingresa un correo electrónico válido.", "email");
+        valid = false;
+      }
+
+      if (mensaje.trim() === "") {
+        mostrarError("Por favor, ingresa un mensaje.", "mensaje");
+        valid = false;
+      }
+
+      if (valid) {
+        mostrarMensajeEnviado();
+      }
+    }
+
+    function mostrarError(mensaje, campo) {
+      const errorContainer = document.getElementById("error-container");
+      const errorDiv = document.createElement("div");
+      errorDiv.classList.add("error");
+      errorDiv.innerText = mensaje;
+      errorContainer.appendChild(errorDiv);
+      document.getElementById(campo).classList.add("input-error");
+    }
+
+    function mostrarMensajeEnviado() {
+      const formulario = document.querySelector("form");
+      formulario.style.display = "none";
+      const mensajeEnviado = document.createElement("div");
+      mensajeEnviado.innerHTML = "<h2>Mensaje enviado correctamente</h2>";
+      formulario.parentNode.appendChild(mensajeEnviado);
+    }
+
+    const images = [
+      'https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/1828875/pexels-photo-1828875.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    ];
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+      const carousel = document.getElementById('carousel');
+      carousel.innerHTML = `<img src="${images[index]}" alt="Image ${index}">`;
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
+    window.addEventListener('load', () => {
+      showImage(currentIndex);
+    });
+  </script>
+</body>
+</html>

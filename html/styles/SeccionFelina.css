@@ -1,0 +1,30 @@
+body {
+  background-image: url("https://www.infobae.com/new-resizer/-x8ragWmtP_cYA5OM_XhVbIWyEE=/arc-anglerfish-arc2-prod-infobae/public/K7GLWG63KNH2XCIC4QATCNHULM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 36px;
+  color: gray;
+  background: none;
+}
+
+p,
+h2,
+h3 {
+  color: white;
+}
+
+.perfil-gato {
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+}
+
+.perfil-gato img {
+  width: 100%;
+}
