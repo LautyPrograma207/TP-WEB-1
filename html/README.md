@@ -36,5 +36,7 @@
 
 **Gestión de Repositorio:**
 
-- [ ] Subir el sitio web a GitHub.
-- [ ] Utilizar GitHub Pages para desplegar el sitio en la web.
+- [x] Subir el sitio web a GitHub.
+- [x] Utilizar GitHub Pages para desplegar el sitio en la web.
+Trabajo realizado
+Me hubiera gustado mejorar el contacto de la persona que adopta a el dueño del animal. ya sea via un link que te lleve a un perfil de face o instagram, tambien agregar mas animales y crear una seccion de animales especiales con discapacidades y problemas, pero proximamente lo voy a hacer fuera de la entrega, todas las imagenes estan proporcionadas por url, por eso no cree la carpeta imagenes. En el html contacto esta el scpit del formulario
